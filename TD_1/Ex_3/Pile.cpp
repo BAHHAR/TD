@@ -55,3 +55,6 @@ void Pile::m_afficherPile() const
 	}
 	cout << endl;
 }
+Pile::~Pile(){
+	delete [] table;
+}
