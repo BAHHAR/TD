@@ -61,6 +61,6 @@ Compte Compte::m_transfererArgent(float somme_donnee,const Compte&c)
 
 Compte::~Compte()
 {
-	//delete[] nomProprietaire;
-	//delete this;
+	delete[] nomProprietaire;
+	sdelete this;
 }
