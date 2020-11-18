@@ -42,7 +42,7 @@ void Pile::m_depiler(int valeur)
 
 bool Pile::m_pileVide()
 {
-	if(sommet>=0)
+	if(sommet<taille)
 		return true;
 
 }
