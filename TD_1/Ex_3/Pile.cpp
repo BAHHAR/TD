@@ -57,7 +57,11 @@ void Pile::m_afficherPile() const
 }
 int Pile::m_sommet()
 {
-	return table[sommet];
+	if (sommet == -1) {
+		cout << "La pile est vide! ";
+		return 0;
+	}else
+		return table[sommet];
 }
 void Pile::m_inverserPile()
 {
@@ -70,7 +74,6 @@ void Pile::m_inverserPile()
 		if (indice == 0)
 			break;
 	}
-	
 }
 Pile::~Pile() {
 	delete[] table;
